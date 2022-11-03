@@ -1,0 +1,124 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+ 
+
+1.Aşama
+Root = X = 7
+         7   (ilk yazılacak değerdir ve 7'den küçük değerler sola, büyük değerler sağa yazılır.)
+
+2.Aşama
+5 < 7 ; 5 değeri sola yazılır.
+        7
+      /
+    5
+3.Aşama
+1 < 7 ; 1 değeri sola yazılır.
+       7
+      /  
+     5   
+   /
+ 1
+ 
+4.Aşama
+8 > 7 ; 8 değeri sağa yazılır.
+        7
+      /  \ 
+     5    8
+   /
+ 1
+
+5.Aşama
+3 < 7 ; 3 değeri sola yazılır. root değeri 1 olduğundan 3, 1 değerinin sağına yazılır
+             7
+           /  \ 
+          5    8
+         /
+       1
+         \
+          3
+    
+6.Aşama
+6 < 7 ; 6 değeri sola yazılır. 6 değeri 5'ten büyük olduğu için 5 değerinin sağ tarafına yazılır.
+
+                 7
+                /  \ 
+               5    8
+              / \
+             1   6
+              \
+               3
+                
+            
+            
+            
+7.Aşama
+0 < 7 ; 0 sola yazılır. 0 değeri 7 den küçük olduğu için root'un sol tarafına yazılır, 0 değeri 1'den küçük olduğu için 1 değerinin sol tarafına yazılır.
+
+                   
+                 7
+                /  \ 
+               5    8
+              / \
+             1   6
+           /   \
+          0      3
+              
+      
+8.Aşama
+9 > 7 ; 9 sağa yazılır
+                        
+                 7
+                /  \ 
+               5    8
+              / \     \
+             1   6      9
+           /   \
+          0      3
+              
+      
+             
+               
+ 9.Aşama 
+ 4 < 7 ; 4 sola yazılır. 4 değeri 3'den büyük olduğu için 3 değerinin sağ tarafına yazılır
+ 
+                 7
+                /  \ 
+               5    8
+              / \     \
+             1   6      9
+           /   \
+          0      3      
+                   \   
+                     4
+
+10.Aşama
+2 < 7 ; 2 sola yazılır. 2 değeri 3'den küçük olduğu için 3 değerinin sol tarafına yazılır.
+              
+              
+                 7
+                /  \ 
+               5    8
+              / \     \
+             1   6      9
+           /   \
+          0      3      
+               /   \   
+             2       4
+
+
+              
+      
+      
+    Böylece Binary Search Tree algoritması tamamlanmıştır.
+
+
+
+
+
+
+
+
+
+
+
+
+  
